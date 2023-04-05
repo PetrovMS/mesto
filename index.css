@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+}
+
+.page {
+    background-color: #000000;
+    width: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.header {
+    max-width: 880px;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.header__logo {
+    max-width: 142px;
+}
+
+.header__line {
+    max-width: 880px;
+    margin: 41px auto 0;
+    opacity: 0.7;
+    border: 1px solid #545454;
+}
+
+.profile {
+    max-width: 880px;
+    margin: 40px auto 0;
+    display: flex;
+    position: relative;
+}
+ 
+.profile__avatar {
+   max-width: 120px;
+   border-radius: 50%;
+   margin-right: 30px;
+}
+
+.profile__info {
+    display: flex;
+    align-self: center;
+}
+
+.profile__description {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__rectangle {
+    border: 1px solid #FFFFFF;
+}
+
+.profile__title {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 1.14;
+    margin: 0;
+}
+
+.profile__subtitle {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    margin: 16px 0 0;
+}
+
+.profile__edit-button {
+    max-width: 24px;
+    max-height: 24px;
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+.profile__add-button {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    background-image: url("./images/Plus.png");
+}
+
+.elements {
+    max-width: 880px;
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 17px;
+}
+
+.elements__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.21;
+    margin: 0;
+}
+
+.elements__element {
+    display: flex;
+    flex-direction: column;
+}
+
+.elements__rectangle-element{
+    max-width: 282px;
+    background-image: url(./images/RectangleElement.jpg);
+    border-radius: 10px;
+}
+
+.elements__group {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.elements__title-like {
+    display: flex;
+    justify-content: space-between;
+    max-width: 246px;
+    margin: 25px 15px 31px 21px;
+}
+
+.elements__like {
+    object-fit: contain;
+    height: fit-content;
+    align-self: center;
+}
+
+.footer {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.footer__copyright {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #545454;
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .header {
+        max-width: 320px;
+        padding-top: 28px;
+    }
+
+    .header__logo {
+        padding-left: 27px;
+    }
+
+    .header__line {
+        margin-top: 31.6px;
+    }
+
+    .profile {
+        max-width: 282px;
+        flex-direction: column;
+        margin: 42px auto 36px;
+    }
+
+    .profile__avatar {
+        margin: 0;
+        align-self: center;
+    }
+
+    .profile__info {
+        margin: 26px auto 36px;
+        gap: 10px;
+    }
+
+    .profile__add-button {
+        position: static;
+        width: 282px;
+        background-image: url("./images/PlusMob.png");
+    }
+
+    .profile__edit-button {
+        max-width: 18px;
+        max-height: 18px;
+        margin: 10px 0 0;
+    }
+    
+    .profile__title {
+        font-size: 27px;
+        line-height: 1.22;
+    }
+
+    .profile__subtitle {
+        font-size: 14px;
+        line-height: 1.21;
+        align-self: center;
+    }
+
+    .elements {
+        max-width: 282px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer {
+        max-width: 282px;
+        padding: 48px 0 36px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
