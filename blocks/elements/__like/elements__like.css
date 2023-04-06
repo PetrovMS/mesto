@@ -1,0 +1,13 @@
+.elements__like {
+    object-fit: contain;
+    height: fit-content;
+    align-self: center;
+}
+
+.elements__like_active {
+    
+}
+
+.elements__like:hover {
+    opacity: 0.5;
+}

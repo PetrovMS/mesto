@@ -1,0 +1,8 @@
+.popup__container {
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.popup__container::after {
+    opacity: 0.5;
+}
