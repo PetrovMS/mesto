@@ -3,8 +3,8 @@
     height: 32px;
     background-image: url(../../../images/Close\ Icon.png);
     position: absolute;
-    top: -40px;
-    right: -40px;
+    top: -55%;
+    right: 40%;
     background-color: initial;
     padding: 0;
     border: none;
@@ -18,8 +18,8 @@
     .popup__close {
         width: 20px;
         height: 20px;
-        top: -36px;
-        right: 0;
+        top: -53%;
+        right: 50%;
         background-image: url(../../../images/CloseIconMob.png);
     }
 }

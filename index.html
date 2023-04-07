@@ -17,6 +17,23 @@
         </header>
 
         <main class="content">
+
+             <section class="popup">
+                <button class="popup__close"></button>
+                <form class="popup__container">
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <div class="popup__field-up">
+                        <input type="text" class="popup__name" name="profileName" placeholder="Имя">
+                        <div class="popup__line"></div>
+                    </div>
+                    <div class="popup__field-down">
+                        <input type="text" class="popup__self" name="profileSelf" placeholder="О себе">
+                        <div class="popup__line"></div>
+                    </div>
+                    <button type="submit" class="popup__submit-button">Сохранить</button>
+                </form>
+        </section>
+
             <section class="profile">
                 <img class="profile__avatar" src="./images/Jac.jpg" alt="Аватар Жака-Ива Кусто">
                 <div class="profile__info">
@@ -28,24 +45,7 @@
                 </div>
                 <div class="profile__add-button"></div>
             </section>
-
-            <section class="popup">
-                <div class="popup__container">
-                    <button class="popup__close"></button>
-                    <form class="popup__window">
-                        <h2 class="popup__title">Редактировать профиль</h2>
-                        <div class="popup__field-up">
-                            <input type="text" class="popup__name" name="profileName" placeholder="Имя">
-                            <div class="popup__line"></div>
-                        </div>
-                        <div class="popup__field-down">
-                            <input type="text" class="popup__self" name="profileSelf" placeholder="О себе">
-                            <div class="popup__line"></div>
-                        </div>
-                        <button type="submit" class="popup__submit-button">Сохранить</button>
-                    </form>
-                </div>
-            </section>
+            
 
             <section class="elements">
                 <div class="elements__element">
@@ -112,13 +112,12 @@
                 </div>
             </section>
         </main>
-    </div>
-
+    
         <footer class="footer">
-            <p class="footer__copyright">© 2023 Mesto Russia</p>
+            <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
-
-        <script src="/script.js"></script>
+    </div>
+        <script src="./scripts/script.js"></script>
 
 </body>
 </html>
