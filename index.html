@@ -12,26 +12,22 @@
     <div class="page">
 
         <header class="header">
-            <img class="header__logo" src="./images/VectorLogo.png" alt="Логотип Mesto Russia">
-            <div class="header__line"></div>
+            <img class="header__logo" src="./images/logoSVG.svg" alt="Логотип Mesto Russia">
         </header>
 
         <main class="content">
 
              <section class="popup">
-                <button class="popup__close"></button>
-                <form class="popup__container">
+               
+                <div class="popup__container"> 
+                    <button class="popup__close" type="button"></button>
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <div class="popup__field-up">
-                        <input type="text" class="popup__name" name="profileName" placeholder="Имя">
-                        <div class="popup__line"></div>
-                    </div>
-                    <div class="popup__field-down">
-                        <input type="text" class="popup__self" name="profileSelf" placeholder="О себе">
-                        <div class="popup__line"></div>
-                    </div>
+                    <form class="popup__field" name="popup">
+                        <input type="text" class="popup__input popup__input_Name" name="profileName" placeholder="Имя">
+                        <input type="text" class="popup__input popup__input_Self" name="profileSelf" placeholder="О себе">
                     <button type="submit" class="popup__submit-button">Сохранить</button>
-                </form>
+                    </form>
+                </div>
         </section>
 
             <section class="profile">
@@ -41,31 +37,28 @@
                         <h1 class="profile__title">Жак-Ив Кусто</h1>
                         <p class="profile__subtitle">Исследователь океана</p>
                     </div>
-                    <button class="profile__edit-button"></button>
+                    <button class="profile__edit-button" type="button"></button>
                 </div>
-                <div class="profile__add-button"></div>
+                <button class="profile__add-button" type="button"></button>
             </section>
             
 
             <section class="elements">
-                <div class="elements__element">
                     <div class="elements__rectangle-element">
                         <img class="elements__group" src="./images/Karachaevsk.jpg"
                             alt="Изображение Карачаево-Черкессии">
                         <div class="elements__title-like">
                             <h2 class="elements__title">Карачаевск</h2>
-                            <img class="elements__like elements__like_active" src="./images/like.png"
-                                alt="Значок сердечка">
+                            <button class="elements__border" type="button"><img class="elements__like" src="./images/like.svg" alt="Значок сердечка"></button>
                         </div>
                     </div>
-                </div>
 
                 <div class="elements__element">
                     <div class="elements__rectangle-element">
                         <img class="elements__group" src="./images/Elbrus.jpg" alt="Изображение Эльбруса">
                         <div class="elements__title-like">
                             <h2 class="elements__title">Гора Эльбрус</h2>
-                            <img class="elements__like" src="./images/like.png" alt="Значок сердечка">
+                            <button class="elements__border" type="button"><img class="elements__like" src="./images/like.svg" alt="Значок сердечка"></button>
                         </div>
                     </div>
                 </div>
@@ -75,7 +68,7 @@
                         <img class="elements__group" src="./images/Dombay.jpg" alt="Изображение Домбая">
                         <div class="elements__title-like">
                             <h2 class="elements__title">Домбай</h2>
-                            <img class="elements__like" src="./images/like.png" alt="Значок сердечка">
+                            <button class="elements__border" type="button"><img class="elements__like" src="./images/like.svg" alt="Значок сердечка"></button>
                         </div>
                     </div>
                 </div>
@@ -85,7 +78,7 @@
                         <img class="elements__group" src="./images/Elbrus.jpg" alt="Изображение Эльбруса">
                         <div class="elements__title-like">
                             <h2 class="elements__title">Гора Эльбрус</h2>
-                            <img class="elements__like" src="./images/like.png" alt="Значок сердечка">
+                            <button class="elements__border" type="button"><img class="elements__like" src="./images/like.svg" alt="Значок сердечка"></button>
                         </div>
                     </div>
                 </div>
@@ -95,7 +88,7 @@
                         <img class="elements__group" src="./images/Dombay.jpg" alt="Изображение Домбая">
                         <div class="elements__title-like">
                             <h2 class="elements__title">Домбай</h2>
-                            <img class="elements__like" src="./images/like.png" alt="Значок сердечка">
+                            <button class="elements__border" type="button"><img class="elements__like" src="./images/like.svg" alt="Значок сердечка"></button>
                         </div>
                     </div>
                 </div>
@@ -106,7 +99,7 @@
                             alt="Изображение Карачаево-Черкессии">
                         <div class="elements__title-like">
                             <h2 class="elements__title">Карачаево-Черкессия</h2>
-                            <img class="elements__like" src="./images/like.png" alt="Значок сердечка">
+                            <button class="elements__border" type="button"><img class="elements__like" src="./images/like.svg" alt="Значок сердечка"></button>
                         </div>
                     </div>
                 </div>

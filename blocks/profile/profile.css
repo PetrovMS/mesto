@@ -1,14 +1,14 @@
 .profile {
     max-width: 880px;
     margin: 40px auto 0;
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: 120px 366px 150px;
 }
 
 @media screen and (max-width: 1023px) {
     .profile {
+        grid-template-columns: 282px;
         max-width: 282px;
-        flex-direction: column;
         margin: 42px auto 36px;
     }
 }
